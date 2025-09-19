@@ -19,26 +19,22 @@
             "database_id": ""
         }
     ],
-    "unsafe": {
-        "bindings": [
-            {
-                "name": "POST_RATE_LIMIT",
-                "type": "ratelimit",
-                "namespace_id": "10111",
-                "simple": {
-                    "limit": 60,
-                    "period": 60
-                }
-            },
-            {
-                "name": "GET_RATE_LIMIT",
-                "type": "ratelimit",
-                "namespace_id": "10112",
-                "simple": {
-                    "limit": 100,
-                    "period": 60
-                }
+    "ratelimits": [
+        {
+            "name": "POST_RATE_LIMIT",
+            "namespace_id": "10111",
+            "simple": {
+                "limit": 60,
+                "period": 60
             }
-        ]
-    }
+        },
+        {
+            "name": "GET_RATE_LIMIT",
+            "namespace_id": "10112",
+            "simple": {
+                "limit": 100,
+                "period": 60
+            }
+        }
+    ]
 }
